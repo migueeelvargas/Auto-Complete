@@ -55,3 +55,6 @@ An example of the program is as follows:
 > 3000    2654<br />
 > 4000    2869<br />
 > 5000    3071<br /> 
+
+###Conclusion
+Given these results, it is clear that the Trie implementation of the dictionary is the fastest of the bunch. It is the faster approach for searching a string of words. The trie's find time increases as the size of the dictionary increases, but regardless, remains the quickest implementation. On the other hand, the balanced BST demonstrates that as the tree continues to grow & increase in depth, the times do so as well. Comparing the times with those of the trie, show that the increase of time for the BST is at a much higher rate than that of the trie. Lastly, the Hash Table implementation shows that regardless of the size of the dictionary, the times will remain fairly constant. The downside to this is that these constant times are much higher than that of the BST and Trie. 
