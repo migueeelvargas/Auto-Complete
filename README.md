@@ -26,32 +26,32 @@ The C++ standard library does not have a built in Ternary Search Tree, thus this
 ##Benchmarking the Dictionaries
 The `benchdict` program is provided to test & compare the actual runtimes of the `find` methods in the 3 provided dictionaries. The program runs: `./benchdict min_size step_size num_iterations dictfile`, where: 
 
-* min_size represents the minimum size of the dictionary you want to test.
-* step_size is how much you want to increase the size of the dictionary on each iteration.
-* num_iterations is the # of times you want the dictionary to increase.
-* dictfile is the dictionary file to use.
+* *min_size* represents the minimum size of the dictionary you want to test.
+* *step_size* is how much you want to increase the size of the dictionary on each iteration.
+* *num_iterations* is the # of times you want the dictionary to increase.
+* *dictfile* is the dictionary file to use.
 
 To compare the find times, the `benchdict` program makes a new dictionary object every iteration & after each iteration the new size is `min_size + i * step_size`, where i represents the current iteration. Then, for each iteration the worst case run time of the `find` method is found by searching for 10 words that are NOT in the dictionary. The average run time is taken by average the 10 different worst case times. This is information is then displayed after each iteration & for each dictionary type. 
 
 An example of the program is as follows:
 
 > DictionaryTrie
-1000    45
-2000    49
-3000    76
-4000    100
-5000    123
+> 1000    45
+> 2000    49
+> 3000    76
+> 4000    100
+> 5000    123
 
 > DictionaryBST
-1000    41
-2000    41
-3000    745
-4000    1000
-5000    1293
+> 1000    41
+> 2000    41
+> 3000    745
+> 4000    1000
+> 5000    1293
 
 > DictionaryHashtable
-1000    40
-2000    400
-3000    89
-4000    900
-5000    2000
+> 1000    40
+> 2000    400
+> 3000    89
+> 4000    900
+> 5000    2000
