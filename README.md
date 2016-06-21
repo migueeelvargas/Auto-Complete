@@ -35,12 +35,12 @@ To compare the find times, the `benchdict` program makes a new dictionary object
 
 An example of the program is as follows:
 
-> DictionaryTrie
-> 1000    45
-> 2000    49
-> 3000    76
-> 4000    100
-> 5000    123
+> DictionaryTrie<br />
+> 1000    45<br />
+> 2000    49<br />
+> 3000    76<br />
+> 4000    100<br />
+> 5000    123<br />
 
 > DictionaryBST
 
