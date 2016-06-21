@@ -34,7 +34,7 @@ The `benchdict` program is provided to test & compare the actual runtimes of the
 To compare the find times, the `benchdict` program makes a new dictionary object every iteration & after each iteration the new size is `min_size + i * step_size`, where i represents the current iteration. Then, for each iteration the worst case run time of the `find` method is found by searching for 10 words that are NOT in the dictionary. The average run time is taken by average the 10 different worst case times. This is information is then displayed after each iteration & for each dictionary type. 
 
 An example of the program is as follows:
-
+> ./benchdict 1000 1000 5 ./test_files/unique_freq_dict.txt <br />
 > DictionaryTrie<br />
 > 1000    235<br />
 > 2000    297<br />
